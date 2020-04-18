@@ -1,0 +1,23 @@
+{
+  "name": "rahulpol",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w styles.scss styles.css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulhiralalpol/RahulPol.git"
+  },
+  "author": "Rahul Pol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rahulhiralalpol/RahulPol/issues"
+  },
+  "homepage": "https://github.com/rahulhiralalpol/RahulPol#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
