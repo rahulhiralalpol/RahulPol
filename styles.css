@@ -1,3 +1,25 @@
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease-in; }
+  .menu-btn .btn-line {
+    width: 25px;
+    height: 2px;
+    margin: 6px 0 6px 0;
+    background: #358880;
+    transition: all 0.3s ease-in; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
 * {
   padding: 0;
   margin: 0; }
@@ -20,7 +42,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(53, 53, 53, 0.9); }
+      background: rgba(53, 53, 53, 0.8); }
   body .header {
     position: fixed;
     z-index: 10;
@@ -36,20 +58,22 @@ body {
       height: 100%;
       margin: 0;
       font-size: 3.5em;
-      font-weight: 700;
+      font-weight: 900;
       text-align: right;
       align-items: center; }
     body .main-content .center {
-      background-color: #358880;
+      width: 2px;
+      background: #358880;
       font-size: 0.5em; }
     body .main-content .right {
-      font-size: 1.85em;
-      font-weight: 100;
-      padding: 20px 0; }
+      font-size: 1.5em;
+      font-weight: 100; }
+      body .main-content .right p {
+        padding: 10px 0; }
   body .icons {
     margin-top: 1rem; }
     body .icons a {
-      padding: 0.25rem; }
+      padding: 0.6rem; }
       body .icons a:hover {
         color: #358880;
         transition: all 0.3s ease-in; }

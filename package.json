@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w styles.scss styles.css --recursive"
+    "sass": "node-sass -w scss/styles.scss styles.css --recursive"
   },
   "repository": {
     "type": "git",
